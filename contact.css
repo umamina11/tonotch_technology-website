@@ -1,0 +1,441 @@
+
+.social-links {
+    background: #1d92cf;
+    padding: 2rem 0 1rem;
+  }
+  
+  .social-links a {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .social-links i.fa {
+    font-size: 1.4rem;
+    padding-right: 0.8rem;
+    padding-bottom: 1rem;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .social-links {
+      padding: 2rem 0;
+    }
+    .social-links i.fa {
+      font-size: 2rem;
+      display: block;
+      padding-right: 0;
+      padding-bottom: 0.5rem;
+    }
+    .social-links a {
+      font-weight: bold;
+    }
+    .social-links .columns {
+      margin: 1rem 0;
+    }
+    .social-links .mobile-stack {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+
+  
+
+
+
+
+  .login-box {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    width: 500px;
+    padding: 40px;
+    margin: 20px auto;
+    transform: translate(-50%, -55%);
+    background: #65aad8;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 3px
+  }
+  
+  .login-box a:hover {
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1.5s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: .375s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+  
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+  
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+  .login-box p:last-child {
+    color: rgb(53, 52, 52);
+    font-size: 14px;
+  }
+  
+  .login-box a.a2 {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .login-box a.a2:hover {
+    background: transparent;
+    color: #aaa;
+    border-radius: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .map{
+
+  width: 90%;
+  float: left;
+  }
+
+
+
+
+
+
+
+
+
+
+  .share {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    transition: .4s ease-in-out;
+    margin-top: 60px;
+  }
+  
+  .btn1 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+  }
+  
+  .btn1 .instagram {
+    margin-top: 0.1em;
+    fill: #cc39a4;
+  }
+  
+  .btn1 .tooltiptext1 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+  }
+  
+  .btn1 .tooltiptext1 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+  }
+  
+  .btn1 .tooltiptext1 .account {
+    margin-top: 1em;
+  }
+  
+  .btn1 .tooltiptext1 .username {
+    font-size: 0.7em;
+    margin-top: 1.6em;
+    font-weight: bold;
+  }
+  
+  .btn1:hover .tooltiptext1 {
+    transform: translateY(-1em);
+    visibility: visible;
+  }
+  
+  .btn1:hover {
+    background-color: #cc39a4;
+  }
+  
+  .btn1:hover .instagram {
+    fill: white;
+  }
+  
+  .btn2 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+  }
+  
+  .btn2 .twitter {
+    margin-top: .25em;
+    margin-left: .1em;
+    fill: #03A9F4;
+  }
+  
+  .btn2 .tooltiptext2 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+  }
+  
+  .btn2 .tooltiptext2 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+  }
+  
+  .btn2 .tooltiptext2 .account {
+    margin-top: 1em;
+  }
+  
+  .btn2 .tooltiptext2 .username {
+    font-size: 0.6em;
+    margin-top: 1.6em;
+    font-weight: bold;
+  }
+  
+  .btn2:hover .tooltiptext2 {
+    transform: translateY(-1em);
+    visibility: visible;
+  }
+  
+  .btn2:hover {
+    background-color: #03A9F4;
+  }
+  
+  .btn2:hover .twitter {
+    fill: white;
+  }
+  
+  .btn3 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+  }
+  
+  .btn3 .tooltiptext3 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+  }
+  
+  .btn3 .tooltiptext3 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+  }
+  
+  .btn3 .tooltiptext3 .account {
+    margin-top: 1em;
+  }
+  
+  .btn3 .tooltiptext3 .username {
+    font-size: 0.7em;
+    margin-top: 1.6em;
+    font-weight: bold;
+  }
+  
+  .btn3:hover .tooltiptext3 {
+    transform: translateY(-1em);
+    visibility: visible;
+  }
+  
+  .btn3:hover {
+    background-color: black;
+  }
+  
+  .btn3:hover .git {
+    fill: white;
+  }
